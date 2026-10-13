@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>박정호 | 포트폴리오</title>
+<meta name="description" content="새로운 경험과 여행을 좋아하는 취업 준비 중인 대학생 박정호의 포트폴리오입니다.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f6f7f9;
+    --surface: #ffffff;
+    --ink: #14213d;
+    --muted: #5b6577;
+    --line: #e2e6ec;
+    --accent: #1f4e8c;
+    --accent-soft: #e8eff8;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: "Noto Sans KR", -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  header.hero {
+    background: var(--ink);
+    color: #fff;
+    padding: 88px 0 72px;
+  }
+  .hero .label {
+    display: inline-block;
+    font-size: 13px;
+    letter-spacing: .08em;
+    color: #b9c8e0;
+    border: 1px solid #3a4a6b;
+    border-radius: 999px;
+    padding: 4px 14px;
+    margin-bottom: 22px;
+  }
+  .hero h1 { font-size: clamp(36px, 7vw, 56px); font-weight: 700; line-height: 1.2; margin-bottom: 16px; }
+  .hero p.intro { font-size: clamp(16px, 2.4vw, 19px); color: #d5deee; max-width: 560px; }
+  .hero .meta { margin-top: 28px; font-size: 14px; color: #9fb1d1; }
+
+  nav {
+    position: sticky; top: 0; z-index: 10;
+    background: rgba(255,255,255,.92);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--line);
+  }
+  nav .wrap { display: flex; gap: 6px; overflow-x: auto; }
+  nav a {
+    color: var(--muted); text-decoration: none; font-size: 14px; font-weight: 500;
+    padding: 14px 12px; white-space: nowrap;
+  }
+  nav a:hover { color: var(--accent); }
+
+  section { padding: 56px 0 8px; }
+  h2 {
+    font-size: 22px; font-weight: 700; margin-bottom: 20px;
+    display: flex; align-items: center; gap: 10px;
+  }
+  h2::before { content: ""; width: 5px; height: 22px; background: var(--accent); border-radius: 3px; }
+
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(3, 1fr); }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 22px;
+  }
+  .card h3 { font-size: 17px; margin-bottom: 4px; }
+  .card .sub { font-size: 14px; color: var(--muted); }
+  .tag {
+    display: inline-block; font-size: 12px; font-weight: 500;
+    color: var(--accent); background: var(--accent-soft);
+    border-radius: 6px; padding: 2px 9px; margin-bottom: 10px;
+  }
+
+  .about p { color: #2c3850; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+  .chip {
+    font-size: 14px; background: var(--surface); border: 1px solid var(--line);
+    border-radius: 999px; padding: 5px 14px; color: var(--ink);
+  }
+
+  .score { font-size: 28px; font-weight: 700; color: var(--accent); line-height: 1.2; margin-top: 6px; }
+
+  footer { margin-top: 72px; padding: 28px 0 40px; border-top: 1px solid var(--line); text-align: center; font-size: 13px; color: var(--muted); }
+
+  @media (max-width: 680px) {
+    .grid.cols-3 { grid-template-columns: 1fr; }
+    header.hero { padding: 64px 0 52px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="label">PORTFOLIO</span>
+    <h1>박정호</h1>
+    <p class="intro">새로운 경험과 여행을 좋아하는 취업 준비 중인 대학생입니다.</p>
+    <p class="meta">순천향대학교 경영학과 · 2028년 2월 졸업 예정</p>
+  </div>
+</header>
+
+<nav>
+  <div class="wrap">
+    <a href="#about">소개</a>
+    <a href="#activities">활동</a>
+    <a href="#certs">자격</a>
+  </div>
+</nav>
+
+<main class="wrap">
+
+  <section id="about" class="about">
+    <h2>소개</h2>
+    <p>
+      게임·이스포츠 산업과 여행에 관심이 많고, 새로운 경험을 통해 배우는 것을 좋아합니다.
+      학생회와 이스포츠 서포터즈, 실무 교육을 거치며 사람들과 함께 일하는 방식을 익혀 왔고,
+      이스포츠·엔터테인먼트 분야의 마케팅과 홍보로 커리어를 이어 가고자 합니다.
+    </p>
+    <div class="chips">
+      <span class="chip">이스포츠 마케팅</span>
+      <span class="chip">엔터 홍보·영업</span>
+      <span class="chip">해외영업</span>
+      <span class="chip">스타트업 홍보·영업</span>
+    </div>
+  </section>
+
+  <section id="activities">
+    <h2>활동</h2>
+    <div class="grid cols-3">
+      <article class="card">
+        <span class="tag">학생 조직</span>
+        <h3>학생회</h3>
+        <p class="sub">순천향대학교 글로벌경영대학 학생회 복지국 활동</p>
+      </article>
+      <article class="card">
+        <span class="tag">대외활동</span>
+        <h3>T1 서포터즈</h3>
+        <p class="sub">이스포츠 구단 서포터즈 활동</p>
+      </article>
+      <article class="card">
+        <span class="tag">교육</span>
+        <h3>농심아카데미</h3>
+        <p class="sub">이스포츠 분야 실무 교육 참여</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="certs">
+    <h2>자격 및 어학</h2>
+    <div class="grid cols-3">
+      <article class="card">
+        <span class="tag">자격증</span>
+        <h3>컴퓨터활용능력</h3>
+        <div class="score">2급</div>
+      </article>
+      <article class="card">
+        <span class="tag">어학</span>
+        <h3>TOEIC</h3>
+        <div class="score">550점</div>
+      </article>
+      <article class="card">
+        <span class="tag">어학</span>
+        <h3>TOEIC Speaking</h3>
+        <div class="score">130점</div>
+      </article>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">© 2026 박정호</div>
+</footer>
+
+</body>
+</html>
